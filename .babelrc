@@ -1,3 +1,4 @@
+//    knows what to do with this because we also installed babel-presets-react with npm
 {
   "presets": [
     "react"
