@@ -10,8 +10,8 @@ Steps to run this application locally:
 5. navigate to http://localhost:8080/
 
 
-[Image of selecting a route](./README_images/react1.png)
+![Image of selecting a route](./README_images/react1.png)
 
-[Image of transit battle](./README_images/react2.png)
+![Image of transit battle](./README_images/react2.png)
 
-[Image of battle results](./README_images/react3.png)
+![Image of battle results](./README_images/react3.png)
