@@ -5,21 +5,25 @@ var Route = ReactRouter.Route;
 var hashHistory = ReactRouter.hashHistory;
 var IndexRoute = ReactRouter.IndexRoute;
 var Main = require('../components/Main');
-var Home = require("../components/Home");
-var PromptContainer = require("../containers/PromptContainer");
-var ConfirmBattleContainer = require("../containers/ConfirmBattleContainer");
-var ResultsContainer = require("../containers/ResultsContainer");
+var TransitHomeContainer = require("../containers/TransitHomeContainer");
+var RouteSelectContainer = require("../containers/RouteSelectContainer");
+
+var ConfirmTransitBattleContainer = require("../containers/ConfirmTransitBattleContainer");
+var TransitResultsContainer = require("../containers/TransitResultsContainer");
+
+
 
 
 var routes = (
     <Router history={hashHistory}>
         <Route path='/' component={Main}>
             {/*default sub route*/}
-            <IndexRoute component={Home} />
-            <Route path='/playerOne' header='Player One' component={PromptContainer}/>
-            <Route path='/playerTwo/:playerOne' header="Player Two" component={PromptContainer}/>
-            <Route path='/battle' component={ConfirmBattleContainer}/>
-            <Route path='/results' component={ResultsContainer}/>
+            <IndexRoute component={TransitHomeContainer} />
+            <Route path='/routeOne' header='1st Route' component={RouteSelectContainer}/>
+            <Route path='/routeTwo/:routeOne' header='2nd Route' component={RouteSelectContainer}/>
+            <Route path='/battle' component={ConfirmTransitBattleContainer}/>
+            <Route path='/results' component={TransitResultsContainer}/>
+
         </Route>
     </Router>
 );

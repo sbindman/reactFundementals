@@ -4,8 +4,20 @@
   <meta charset="UTF-8">
   <title>Github Battle</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.css' rel='stylesheet' />
+  <script src='https://api.mapbox.com/mapbox.js/plugins/turf/v2.0.2/turf.min.js'></script>
+  <style>
+    body { margin:0; padding:0; }
+    #map1 { position:absolute; top:0; bottom:0; width:100%; }
+    #map2 { position:absolute; top:0; bottom:0; width:100%; }
+    .mapboxgl-canvas { position: relative !important;}
+  </style>
+
 </head>
 <body>
+
   <div id="app"></div>
 </body>
 </html>

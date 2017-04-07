@@ -15,7 +15,7 @@ var Loading = React.createClass({
     },
     render : function() {
         return (
-            <div>{this.props.text}</div>
+            <h1 className="jumbotron col-sm-12 text-center">{this.props.text}</h1>
         )
     }
 });
